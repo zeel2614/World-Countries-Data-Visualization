@@ -21,6 +21,19 @@
       </div>
     </main>
 
+    <div id = "paginationControls">
+      <label for="recordsPerPage">Records Per Page:</label>
+      <select id="recordsPerPage">
+        <option value="5">5</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="200">200</option>
+      </select>
+      <button id="prevPage" onclick="prevRecords()">Previous</button>
+      <span id="pageIndicator">Page 1</span>
+      <button id="nextPage" onclick="nextRecords()">Next</button>
+    </div>
+
     <script src="./data/countries_data.js"></script>
     <script src="./js/main.js"></script>
   </body>
