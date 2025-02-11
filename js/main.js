@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("recordsPerPage").addEventListener("change", (e) => {
     recordsPerPage = parseInt(e.target.value);
     currentPage = 1; // Reset to first page
-    showLanguage(); 
+    showLanguage();
   });
 
   showPopulation();
@@ -97,7 +97,7 @@ function nextRecords() {
 }
 
 function clearPreviousData() {
-  // Remove previous lists 
+  // Remove previous lists
   document
     .querySelectorAll("main h3, main ul")
     .forEach((element) => element.remove());
