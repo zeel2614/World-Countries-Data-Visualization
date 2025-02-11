@@ -27,6 +27,7 @@ let currentPage = 1;
 let currentData = []; // To hold the data being currently displayed (e.g., population or languages)
 
 function showPopulation() {
+  currentPage = 1;
   currentData = countries_data.sort((a, b) => b.population - a.population);
   displayData();
 }
