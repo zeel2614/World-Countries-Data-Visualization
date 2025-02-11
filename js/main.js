@@ -32,6 +32,7 @@ function showPopulation() {
 }
 
 function showLanguage() {
+  currentPage = 1;
   currentData = [];
   const languageMap = {};
 
